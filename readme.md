@@ -6,9 +6,9 @@ This repository demonstrates how to set up and build the Waylo project using CMa
 
 Ensure you have the following installed on your system:
 
-- [CMake](https://cmake.org/download/)
+- [CMake](https://cmake.org/download/) version cmake version 3.24.2 required 
 - [Git](https://git-scm.com/)
-- A C++ compiler (e.g., GCC, Clang, or MSVC)
+- A C++ compiler (e.g., GCC, Clang, or MSVC) version 11 of gcc required 
 
 ## Instructions
 
