@@ -48,8 +48,6 @@ target_sources(${PROJECT_NAME}
     PRIVATE
         ${WAYLO2_SOURCE_DIR}/Source/PluginEditor.cpp
         ${WAYLO2_SOURCE_DIR}/Source/PluginProcessor.cpp
-        ${WAYLO2_SOURCE_DIR}/Source/PluginEditor.h
-        ${WAYLO2_SOURCE_DIR}/Source/PluginProcessor.h
 )
 
 target_compile_definitions(${PROJECT_NAME}
