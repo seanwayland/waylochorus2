@@ -24,11 +24,11 @@ endif()
 
 project(waylochorus2 VERSION 1.0)
 juce_add_plugin(${PROJECT_NAME}
-    PRODUCT_NAME                    "WayloChorus2"
+    PRODUCT_NAME                    "WayloChorus3"
     VERSION                         "1.0.0"
     BUNDLE_ID                       "com.waylo.waylo"
-    PLUGIN_NAME                     "WayloChorus2"
-    PLUGIN_CODE                     "Wch2"
+    PLUGIN_NAME                     "WayloChorus3"
+    PLUGIN_CODE                     "Wch3"
     PLUGIN_MANUFACTURER_CODE        "Unk1"
     LV2URI                          "urn:waylo.waylo"
 
