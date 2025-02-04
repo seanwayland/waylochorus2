@@ -35,27 +35,27 @@ WaylodelayUdAudioProcessor::WaylodelayUdAudioProcessor()
                                                                      0.5f));                                      // default value
     
     
-    addParameter(mDelayOneGainParameter = new juce::AudioParameterFloat("delayonegain", "Delay One Gain", juce::NormalisableRange<float> (0.0f, 1.0f), 0.5f));
+    addParameter(mDelayOneGainParameter = new juce::AudioParameterFloat("delayonegain", "Delay One Gain", juce::NormalisableRange<float> (0.0f, 1.0f), 0.9f));
     addParameter(mDelayOneModDepthParameter = new juce::AudioParameterFloat("delayonemodDepth", "Delay One Mod Depth", juce::NormalisableRange<float> (0.0f, 1.0f), 0.9f));
-    addParameter(mDelayOneModRateParameter = new juce::AudioParameterFloat("delayonemodRate", "Delay One Mod Rate", juce::NormalisableRange<float> (0.0f, 1.0f), 0.35f));
+    addParameter(mDelayOneModRateParameter = new juce::AudioParameterFloat("delayonemodRate", "Delay One Mod Rate", juce::NormalisableRange<float> (0.0f, 1.0f), 0.65f));
     addParameter(mDelayOneFeedbackParameter = new juce::AudioParameterFloat("feedbackone", "Feedback One", juce::NormalisableRange<float> (0.0f, 0.98f), 0.0f));
     
     addParameter(mDelayTwoTimeParameter = new juce::AudioParameterFloat("delaytwodelaytime", "Delay Two Delay Time", juce::NormalisableRange<float> (0.0f, 1.0f), 0.030f));
-    addParameter(mDelayTwoGainParameter = new juce::AudioParameterFloat("delaytowgain", "Delay Two Gain", juce::NormalisableRange<float> (0.0f, 1.0f), 0.5f));
-    addParameter(mDelayTwoModDepthParameter = new juce::AudioParameterFloat("delaytwomodDepth", "Delay Two Mod Depth", juce::NormalisableRange<float> (0.0f, 1.0f), 0.1f));
-    addParameter(mDelayTwoModRateParameter = new juce::AudioParameterFloat("delaytwomodRate", "Delay Two Mod Depth", juce::NormalisableRange<float> (0.0f, 1.0f), 0.4f));
+    addParameter(mDelayTwoGainParameter = new juce::AudioParameterFloat("delaytowgain", "Delay Two Gain", juce::NormalisableRange<float> (0.0f, 1.0f), 0.9f));
+    addParameter(mDelayTwoModDepthParameter = new juce::AudioParameterFloat("delaytwomodDepth", "Delay Two Mod Depth", juce::NormalisableRange<float> (0.0f, 1.0f), 0.9f));
+    addParameter(mDelayTwoModRateParameter = new juce::AudioParameterFloat("delaytwomodRate", "Delay Two Mod Depth", juce::NormalisableRange<float> (0.0f, 1.0f), 0.57f));
     addParameter(mDelayTwoFeedbackParameter = new juce::AudioParameterFloat("feedbacktwo", "Feedback Two", juce::NormalisableRange<float> (0.0f, 0.98f), 0.0f));
     
     addParameter(mDelayThreeTimeParameter = new juce::AudioParameterFloat("delaythreedelaytime", "Delay Three Delay Time", juce::NormalisableRange<float> (0.0f, 1.0f), 0.0361f));
-    addParameter(mDelayThreeGainParameter = new juce::AudioParameterFloat("delaythreegain", "Delay Three Gain", juce::NormalisableRange<float> (0.0f, 1.0f), 0.5f));
-    addParameter(mDelayThreeModDepthParameter = new juce::AudioParameterFloat("delaythreemodDepth", "Delay Three Mod Depth", juce::NormalisableRange<float> (0.0f, 1.0f), 0.1f));
-    addParameter(mDelayThreeModRateParameter = new juce::AudioParameterFloat("delaythreemodRate", "Delay Two Three Depth", juce::NormalisableRange<float> (0.0f, 1.0f), 0.42f));
+    addParameter(mDelayThreeGainParameter = new juce::AudioParameterFloat("delaythreegain", "Delay Three Gain", juce::NormalisableRange<float> (0.0f, 1.0f), 0.9f));
+    addParameter(mDelayThreeModDepthParameter = new juce::AudioParameterFloat("delaythreemodDepth", "Delay Three Mod Depth", juce::NormalisableRange<float> (0.0f, 1.0f), 0.9f));
+    addParameter(mDelayThreeModRateParameter = new juce::AudioParameterFloat("delaythreemodRate", "Delay Two Three Depth", juce::NormalisableRange<float> (0.0f, 1.0f), 0.48f));
     addParameter(mDelayThreeFeedbackParameter = new juce::AudioParameterFloat("feedbackthree", "Feedback Two", juce::NormalisableRange<float> (0.0f, 0.98f), 0.0f));
     
     addParameter(mDelayFourTimeParameter = new juce::AudioParameterFloat("delayfourdelaytime", "Delay Tour Delay Time", juce::NormalisableRange<float> (0.0f, 1.0f), 0.0476f));
-    addParameter(mDelayFourGainParameter = new juce::AudioParameterFloat("delayfourgain", "Delay Four Gain", juce::NormalisableRange<float> (0.0f, 1.0f), 0.5f));
-    addParameter(mDelayFourModDepthParameter = new juce::AudioParameterFloat("delayfourmodDepth", "Delay Four Mod Depth", juce::NormalisableRange<float> (0.0f, 1.0f), 0.1f));
-    addParameter(mDelayFourModRateParameter = new juce::AudioParameterFloat("delayfourmodRate", "Delay Four Mod Depth", juce::NormalisableRange<float> (0.0f, 1.0f), 0.37f));
+    addParameter(mDelayFourGainParameter = new juce::AudioParameterFloat("delayfourgain", "Delay Four Gain", juce::NormalisableRange<float> (0.0f, 1.0f), 0.9f));
+    addParameter(mDelayFourModDepthParameter = new juce::AudioParameterFloat("delayfourmodDepth", "Delay Four Mod Depth", juce::NormalisableRange<float> (0.0f, 1.0f), 0.9f));
+    addParameter(mDelayFourModRateParameter = new juce::AudioParameterFloat("delayfourmodRate", "Delay Four Mod Depth", juce::NormalisableRange<float> (0.0f, 1.0f), 0.44f));
     addParameter(mDelayFourFeedbackParameter = new juce::AudioParameterFloat("feedbackfour", "Feedback Four", juce::NormalisableRange<float> (0.0f, 0.98f), 0.0f));
     
     addParameter(mDelayFiveTimeParameter = new juce::AudioParameterFloat("delayfivedelaytime", "Delay five Delay Time",juce::NormalisableRange<float> (0.0f, 1.0f), 0.3f));
@@ -87,17 +87,17 @@ WaylodelayUdAudioProcessor::WaylodelayUdAudioProcessor()
     addParameter (mWetGainParameter = new juce::AudioParameterFloat ("wetgain",                                      // parameter ID
                                                                      "Wet Gain",                                      // parameter name
                                                                      juce::NormalisableRange<float> (0.0f, 1.0f), // parameter range
-                                                                     0.5f));                                      // default value
+                                                                     0.9f));                                      // default value
     
     addParameter (mRateParameter = new juce::AudioParameterFloat ("rate",                                      // parameter ID
                                                                   "Global Rate",                                      // parameter name
                                                                   juce::NormalisableRange<float> (0.0f, 5.0f), // parameter range
-                                                                  1.0f));
+                                                                  1.25f));
     
     addParameter (mDepthParameter = new juce::AudioParameterFloat ("depth",                                      // parameter ID
                                                                    "Global Depth",                                      // parameter name
                                                                    juce::NormalisableRange<float> (0.0f, 5.0f), // parameter range
-                                                                   1.0f));
+                                                                   1.25f));
     
     addParameter(mDelayOnePanParameter = new juce::AudioParameterFloat("panOne", "Pan One", juce::NormalisableRange<float> (0.0f, 1.0f), 0.0f));
     addParameter(mDelayTwoPanParameter = new juce::AudioParameterFloat("panTwo", "Pan Two", juce::NormalisableRange<float> (0.0f, 1.0f), 1.0f));
